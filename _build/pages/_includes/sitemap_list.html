@@ -1,0 +1,18 @@
+<div class="col-xs-12 col-sm-3">
+  {% assign list = site.sitemap_list[include.id] %}
+
+  <h4>
+    <i class="{{list.icon}}"></i> 
+    {{list.name}}
+  </h4>
+
+  {% for item in list.items %}
+  
+  {% assign ref = [ page.category, page.subcategory ] %}
+  {% unless item.hide_on and ref == item.hide_on %}
+  <a href="{{item.link}}">{{item.name}}</a>
+  {% endunless %}
+
+  {% endfor %}
+</div>
+

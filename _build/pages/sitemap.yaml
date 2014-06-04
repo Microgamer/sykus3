@@ -1,0 +1,25 @@
+sitemap_list:
+  kurzuebersicht:
+    name: Kurzübersicht
+    icon: icon-pushpin
+    items:
+      - name: Für Schulträger
+        link: /kurzuebersicht/schultraeger
+      - name: Für Administratoren
+        link: /kurzuebersicht/administratoren
+      - name: Für Lehrer &amp; Schüler
+        link: /kurzuebersicht/lehrer-schueler
+ 
+  technologie:
+    name: Technologie
+    icon: icon-beaker
+    items:
+      - name: Features
+        link: /technologie/features
+      - name: Linux
+        link: /technologie/linux
+      - name: Webdienste
+        link: /technologie/webdienste
+      - name: Zu Hause
+        link: /technologie/zuhause
+

@@ -1,0 +1,62 @@
+<div>
+  {% for id in page.features %}
+  {% assign feature = site.feature_list[id] %}
+  <div class="feature row" id="{{id}}">
+    <i class="{{feature.icon}}"></i>
+    <h3>{{feature.name}}</h3>
+    <p>{{feature.text}}</p>
+
+    {% if page.features_more %}
+
+    {% if feature.text_more %}
+    <p>{{feature.text_more}}</p>
+    {% endif %}
+
+    {% if feature.screenshots %}
+    <div class="spacer"></div>
+    <div class="row">
+
+      {% for screenshot in feature.screenshots %}
+      {% capture img %}
+      <img src="/sykus3/res/screenshots/{{screenshot.img}}.png{{site.version}}"
+      alt="{{screenshot.title}}" 
+      title="{{screenshot.title}}">
+      {% endcapture %}
+
+      {% case forloop.length %}
+      {% when 1 %}
+      {% assign col_class = 'col-xs-12 col-lg-8 col-lg-offset-2' %}
+      {% when 2 %}
+      {% assign col_class = 'col-xs-12 col-lg-6' %}
+      {% else %}
+      Invalid number of screenshots.
+      {% endcase %}
+
+      <div class="{{col_class}}">
+        <a href="/sykus3/res/screenshots/{{screenshot.img}}.png{{site.version}}" 
+          class="visible-lg thumbnail" 
+          data-lightbox="screenshot" title="{{screenshot.title}}">
+          {{img}}
+        </a>
+
+        <div class="hidden-lg thumbnail">
+          {{img}}
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+    {% endif %}
+
+    {% elsif feature.link %}
+
+    <a href="{{feature.link}}">
+      Erfahren Sie mehr
+      <i class="icon-double-angle-right"></i>
+    </a>
+
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+

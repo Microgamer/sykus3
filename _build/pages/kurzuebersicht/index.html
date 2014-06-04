@@ -1,0 +1,39 @@
+---
+layout: default
+title: Kurzübersicht für...
+category: kurzuebersicht
+---
+
+<div class="col-xs-12">
+  {% include lead_title_center.html %}
+
+  {% assign col_class = 'col-xs-12 col-sm-6 col-sm-offset-3' %}
+  {% assign btn_class = 'btn btn-lg btn-primary width-max' %}
+  <div class="row margin-row">
+    <div class="{{col_class}}">
+      <a href="/sykus3/kurzuebersicht/schultraeger" class="{{btn_class}}">
+        <i class="icon-rocket"></i>
+        Schulträger
+      </a>
+    </div>
+  </div>
+
+  <div class="row margin-row">
+    <div class="{{col_class}}">
+      <a href="/sykus3/kurzuebersicht/administratoren" class="{{btn_class}}">
+        <i class="icon-cogs"></i>
+        Administratoren
+      </a>
+    </div>
+  </div>
+
+  <div class="row margin-row">
+    <div class="{{col_class}}">
+      <a href="/sykus3/kurzuebersicht/lehrer-schueler" class="{{btn_class}}">
+        <i class="icon-briefcase"></i>
+        Lehrer &amp; Schüler
+      </a>
+    </div>
+  </div>
+</div>
+

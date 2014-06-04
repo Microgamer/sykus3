@@ -1,0 +1,73 @@
+// prevent layout from moving when scrollbar appears
+html { overflow-y: scroll; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  .transition(background-color 0.1s linear);
+  font-weight: 600;
+}
+
+.hyphens { .hyphens(auto); }
+
+#main .row > * { 
+  margin-bottom: @line-height-computed; 
+}
+
+.narrow-row {
+  max-width: @container-tablet;
+  margin: auto !important;
+}
+
+.very-narrow-row {
+  .narrow-row;
+  max-width: 450px;
+}
+
+.lead-like {
+  font-weight: 300 !important;
+}
+
+.lead {
+  .lead-like;
+  .h3;
+  @media (min-width: @screen-sm) { .h2; }
+
+  margin-bottom: (@line-height-computed * 2) !important;
+
+  margin-top: 0; 
+  padding-bottom: 10px;
+  border-bottom: 1px solid @hr-border;
+}
+
+.button-variant(@color; @bg; @border) {
+  background-color: darken(@bg, 7%) !important;
+  #gradient > .vertical(lighten(@bg, 7%), darken(@bg, 7%), 0%, 100%);
+
+  .transition(background-position 0.1s linear);
+
+  &:hover {
+    background-position: 0 -15px;
+  }
+}
+
+.spacer {
+  margin-top: 50px;
+}
+
+.form-horizontal {
+  label {
+    text-align: right;
+  }
+}
+
+.width-max { width: 100%; }
+
+.btn-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+

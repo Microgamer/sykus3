@@ -1,0 +1,17 @@
+{% if page.category == include.item.id %}
+  {% assign activeclass = 'active' %}
+{% else %}
+  {% assign activeclass = '' %}
+{% endif %}
+
+<li class="{{activeclass}}">
+    {% if include.item.absolute_link %}
+      <a href="{{include.item.absolute_link}}">
+    {% else %}
+      <a href="/sykus3/{{include.item.id}}/{{include.item.link}}">
+    {% endif %}
+    <i class="{{include.item.icon}}"></i> 
+    {{include.item.name}}
+  </a>
+</li>   
+

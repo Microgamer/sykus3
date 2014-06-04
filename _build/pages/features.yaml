@@ -1,0 +1,334 @@
+feature_list:
+  einfach-und-intuitiv:
+    icon: icon-lightbulb
+    name: Einfach &amp; Intuitiv
+    text: >-
+      Sykus 3 ist von der Oberfläche bis hin zur Bedienung der einzelnen
+      Funktionen einfach und selbsterklärend aufgebaut. 
+      Somit können Schüler und Lehrer das System intuitiv 
+      und ohne Anleitung benutzen.
+
+  internetfilter: 
+    icon: icon-filter
+    name: Internetfilter
+    link: /technologie/features#internetfilter
+    text: >-
+      Der Internetfilter der neusten Generation umfasst die Blacklists
+      von zwei Anbietern und erfasst ein enormes Spektrum an Webseiten.
+      Durch die Vielzahl der Kategorien und Einstellungen 
+      kann der Filter exakt auf die jeweiligen Bedürfnisse angepasst werden.
+    text_more: >-
+      Alle Filterkategorien können entweder für alle Benutzer oder nur 
+      für Schüler gesperrt werden. So können Lehrer einen weniger 
+      stark gefilterten Internetzugang nutzen.
+      Außerdem können manuelle White- und Blacklist-Einträge angelegt werden.
+      Somit bietet der Internetfilter alle Möglichkeiten, um den 
+      Internetzugriff ohne unnötige Einschränkungen optimal abzusichern.
+    screenshots:
+      - title: Manuelle Filtereinträge
+        img: administrator/internetfilter-manuelle-eintraege
+  
+  stabil-durch-linux:
+    icon: icon-linux
+    name: Stabil durch Linux
+    link: /technologie/linux#stabil-durch-linux
+    text: >-
+      Durch den Einsatz von Linux auf dem Server und den Clients
+      ist ein homogenes System gewährleistet, welches maximale Stabilität
+      bietet. So können stets aktuelle Softwareversionen benutzt
+      und verschiedene Hardware parallel betrieben werden.
+    text_more: >-
+      Als Basis für die Client-Rechner benutzen wir das 
+      <a href="http://ubuntu.com">Ubuntu</a>-Derivat
+      <a href="http://xubuntu.org">Xubuntu</a>,
+      welches alle sechs Monate auf die neuste Version
+      aktualisiert wird. Zusätzlich zur großen Open-Source-Community
+      wird Ubuntu von der Softwarefirma
+      <a href="http://canonical.com">Canonical</a> entwickelt.
+
+  keine-softwarelizenzen:
+    icon: icon-smile
+    name: Keine Softwarelizenzen
+    text: >-
+      Da Sykus 3 ausschließlich Open-Source-Software benutzt, fallen weder
+      für das Betriebssystem noch für Anwendungsprogramme Lizenkosten an.
+      Durch die Integration von Webdiensten der großen Schulbuchverlage
+      können alle Ansprüche im Schuleinsatz abgedeckt werden.
+      
+  wartung-und-monitoring:
+    icon: icon-cog
+    name: Wartung &amp; Monitoring
+    text: >-
+      Wir kümmern uns darum, dass Ihr Netzwerk problemlos läuft. 
+      Durch proaktives Monitoring und regelmäßige Softwareupdates 
+      sorgen wir dafür, dass das System stabil und sicher funktioniert.
+
+  firewall-und-sicherheit:
+    icon: icon-lock
+    name: Firewall &amp; Sicherheit
+    text: >-
+      Durch die integrierte Firewall ist das Netzwerk gegen
+      Angriffe von außen geschützt. Alle Daten liegen sicher auf dem
+      Server innerhalb der Schule. Der Zugriff von außen ist nur
+      über eine verschlüsselte Verbindung möglich.
+
+  grundschulen:
+    icon: icon-book
+    name: Grundschulen
+    text: >-
+      Für den Einsatz an Grundschulen wurden die Funktionen so angepasst,
+      dass auch jüngere Schüler problemlos das System benutzen können.
+      Außerdem wurden Lernprogramme integriert, 
+      die speziell für Grundschüler entwickelt wurden. 
+      Durch die geringen monatlichen Gebühren und den Wegfall von Lizenzkosten
+      ist Sykus 3 auch für kleine Grundschulen geeignet.
+
+  logs:
+    icon: icon-align-justify
+    name: Logs
+    text: >-
+      Mit ausführlichen Logs für Benutzeranmeldung, Webinterface-Zugriff
+      und Administrator-Aktionen können alle Vorgänge nachvollzogen werden.
+      Die Logs sind nicht veränderbar und von allen Administratoren einsehbar.
+    screenshots:
+      - title: Logs für die Benutzeranmeldung
+        img: administrator/logs-benutzeranmeldung
+
+  softwareverteilung:
+    icon: icon-camera
+    name: Softwareverteilung  
+    link: /technologie/features#softwareverteilung
+    text: >-
+      Mit der Softwareverteilung, die auf dem Imaging-Prinzip beruht,
+      können Sie mit einem Knopfdruck alle Rechner vollautomatisch mit dem
+      neusten Image bespielen. Dieses Image enthält das Betriebssystem und
+      die individuell ausgewählten Softwarepakete.
+    text_more: >-
+      Automatisch am Wochenende oder manuell durch den Administrator 
+      ausgelöst wird nachts ein neues Image in einer Virtuellen Maschine auf 
+      dem Server erstellt, welches dann vollautomatisch
+      auf die Clients aufgespielt wird. 
+      Dabei werden die Rechner per Wake-on-LAN
+      und über PXE-Boot in das Installationsystem gestartet, das System
+      wird installiert und die Rechner danach wieder heruntergefahren.
+
+  webinterface:
+    icon: icon-dashboard
+    name: Webinterface
+    link: /technologie/features#webinterface
+    text: >-
+      Alle Funktionen sind in einem übersichtlichen Webinterface 
+      zusammengefasst.  So können Sie nicht nur von jedem beliebigen
+      Gerät aus, sondern auch weltweit über das Internet 
+      auf das System zugreifen.
+    text_more: >-
+      Das Webinterface wird über eine eigene 
+      Toplevel-Domain erreicht, die frei ausgewählt werden kann. Der
+      Zugriff erfolgt ausschließlich über eine sichere SSL-Verbindung.
+    screenshots:
+      - title: Webinterface - Persönliche Startseite
+        img: benutzer/startseite
+
+  wlan:
+    icon: icon-signal
+    name: WLAN
+    text: >-
+      Mit dem integrierten RADIUS-Server können sich Schüler und Lehrer
+      mit ihren bereits bekannten Anmeldedaten am schuleigenen WLAN-Netzwerk
+      anmelden. Das mühsame Austauschen von WLAN-Keys entfällt somit.
+  
+  benutzerimport:
+    icon: icon-group
+    name: Benutzerimport
+    text: >-
+      Am Anfang des Schuljahres werden die Benutzerkonten für Schüler
+      und Lehrer mithilfe einer CSV-Liste importiert.
+      Dabei werden neue Benutzer hinzugefügt, Schüler automatisch in die
+      neue Klasse versetzt und alte Benutzer gelöscht. Der Schuljahreswechsel
+      mit Sykus 3 dauert somit nur wenige Sekunden.
+
+  sichere-erstanmeldung:
+    icon: icon-key
+    name: Sichere Erstanmeldung
+    link: /technologie/features#sichere-erstanmeldung
+    text: >-
+      Sobald ein neuer Benutzer erstellt wird, bekommt dieser ein zufälliges
+      Passwort zugewiesen. Die Initialpasswörter werden dann automatisch 
+      in einer Druckvorlage zusammengefasst und können dann nach 
+      Klassen sortiert ausgedruckt werden. So erhält jeder Benutzer sein 
+      individuelles Initialpasswort sicher in Papierform.
+    text_more: >-
+      Die Ausdrucke können dann von den Klassenlehrern individuell an jeden
+      Schüler verteilt werden, sodass maximale Sicherheit gewährleistet ist.
+      Die Erstanmeldung muss nur ein einziges Mal per Benutzer erfolgen, beim
+      Schuljahreswechsel bleibt das persönliche Passwort erhalten.
+
+  dateiablage:
+    icon: icon-folder-open
+    name: Dateiablage  
+    link: /technologie/features#dateiablage
+    text: >-
+      Jeder Benutzer erhält ein persönliches Verzeichnis, in dem Daten
+      abgelegt werden können. Es gibt außerdem individuelle Dateifreigaben
+      für Benutzergruppen, in denen die Gruppenmitglieder Dateien austauschen
+      können. Alle Dateiablagen sind weltweit über eine gesicherte
+      Verbindung erreichbar.
+    text_more: >-
+      Durch die automatische Speicherplatzverwaltung erhält jeder Benutzer
+      ausreichend Speicherkapazität, ohne dass die Festplattenauslastung
+      des Servers einen bestimmten Wert überschreitet. Somit ist ein optimales
+      Verhältnis zwischen Flexibilität und Begrenzung sichergestellt.
+    screenshots:
+      - title: Dateiablage im Webinterface
+        img: benutzer/dateien
+
+  eigene-rechner:
+    icon: icon-laptop
+    name: Eigene Rechner
+    text: >-
+      Sie können auch mit Ihren eigenen Rechnern innerhalb und außerhalb
+      der Schule mit Sykus 3 arbeiten. Sie erhalten automatisch 
+      Internetzugriff und
+      können mit wenigen Klicks auf die Dateiablagen zugreifen. Das
+      System ist mit Windows&nbsp;7&nbsp;&amp;&nbsp;8,
+      Linux und Mac&nbsp;OS&nbsp;X kompatibel.
+    screenshots:
+      - title: Anleitung für eigene Geräte im Webinterface
+        img: benutzer/eigene-geraete
+
+  mobile-geraete:
+    icon: icon-tablet
+    name: Mobile Geräte
+    text: >-
+      Durch des Webinterface können Sie auch mit Tablets und Smartphones
+      auf alle Funktionen von Sykus 3 zugreifen. Das Webinterface
+      wurde sorgfältig optimiert, sodass alle Funktionen auch auf kleinen
+      Displays sinnvoll benutzbar sind.
+
+  zuhause:
+    icon: icon-home
+    name: Zu Hause
+    text: >-
+      Arbeiten Sie von zu Hause aus weiter oder bereiten Sie Ihren Unterricht 
+      vor.  Durch das Webinterface können
+      Sie weltweit über das Internet auf alle Funktionen von Sykus 3 zugreifen.
+      Ebenso haben Sie direkten Zugriff auf Ihre gespeicherten Dateien.
+
+  raumsteuerung:
+    icon: icon-sitemap
+    name: Raumsteuerung
+    text: >-
+      Mit der Raumsteuerung behalten Sie alle Schülerbildschirme im 
+      Computerraum im Blick. Mit nur einem Klick können Sie Bildschirme, 
+      Internet, Ton oder Drucker sperren und freigeben.
+    screenshots:
+      - title: Raumsteuerung
+        img: benutzer/raumsteuerung
+      
+  gruppenverwaltung:
+    icon: icon-group
+    name: Gruppenverwaltung     
+    text: >-
+      Organisieren Sie Ihre Schüler schnell und intuitiv in logische Gruppen.
+      Sie können Gruppen für z.B. Kurse, Klassenfahren oder Projektgruppen
+      erstellen und so gezielt Informationen mit der Dateiablage,
+      dem Nachrichtensystem und dem Kalender austauschen.
+    screenshots:
+      - title: Benutzergruppen
+        img: benutzer/benutzergruppen
+      - title: Benutzergruppe bearbeiten
+        img: benutzer/benutzergruppe-bearbeiten
+
+  kalender:
+    icon: icon-calendar
+    name: Kalender   
+    text: >-
+      Mit dem Kalendersystem können Sie Ihre persönlichen Termine organisieren 
+      und Termine für Ihre Gruppen, Klassen und Jahrgänge eintragen.
+      Der Kalender umfasst auch einen Klausurplan und eine Resourcenverwaltung
+      bzw. Raumbelegungsplan.
+  
+  nachrichten:
+    icon: icon-envelope
+    name: Nachrichten
+    text: >-
+      Das Nachrichtensystem ermöglicht die Kommunikation zwischen den 
+      Benutzern.  Schüler können Nachrichten an Lehrer und eigene Gruppen 
+      schreiben.  Lehrer können mit einzelnen Schülern oder Lehrern, 
+      allen Lehrern, Gruppen, Klassen sowie Jahrgängen kommunizieren.
+    
+  smartboards:
+    icon: icon-magic
+    name: SMART Boards
+    text: >-
+      Interaktive Tafelsysteme von SMART Technologies können problemlos
+      mit Sykus 3 benutzt werden. Die nötige Software kann mit einem Klick
+      vom Administrator installiert werden und integriert sich nahtlos in das
+      System.
+
+  benutzerverwaltung:
+    icon: icon-user
+    name: Benutzerverwaltung
+    text: >-
+      Die Benutzerverwaltung bietet eine Übersicht über alle im System
+      vorhanden Schüler, Lehrer und weiteren Benutzer. Neue Benutzer
+      können manuell angelegt werden oder über die Importfunktion 
+      hinzugefügt werden.
+    screenshots:
+      - title: Benutzerliste
+        img: administrator/benutzerliste
+
+  softwarepakete:
+    icon: icon-gift
+    name: Softwarepakete
+    text: >-
+      Mit der Softwarepaket-Auswahl kann der Administrator gezielt die 
+      Software auswählen, die im Schulbetrieb eingesetzt werden soll. 
+      Wenn eine Software nicht in der umfangreichen Liste vorhanden ist,
+      kann diese auf Anfrage kostenlos hinzugefügt werden.
+    screenshots: 
+      - title: Paketauswahl
+        img: administrator/softwarepakete
+
+  rechnerverwaltung:
+    icon: icon-desktop
+    name: Rechnerverwaltung
+    text: >- 
+      In einer übersichtlichen Liste sind alle Rechner aufgelistet, die mit 
+      dem Client-Image bespielt werden. Hier sieht der Administrator
+      den aktuellen Status des Rechners sowie weitere Hardwareinformationen.
+    screenshots:
+      - title: Rechnerliste
+        img: administrator/rechnerliste
+
+  drucker:
+    icon: icon-print
+    name: Drucker
+    text: >- 
+      Netzwerkfähige Drucker bzw. Printserver können mit wenigen Klicks
+      ins System integriert werden. Der Druckerzugriff kann für verschiendene
+      Räume oder Rechnergruppen getrennt freigeschaltet werden. Alle
+      Sykus-Clients können dann auf die jeweils erlaubten Drucker automatisch
+      zugreifen.
+    screenshots:
+      - title: Druckerliste
+        img: administrator/druckerliste
+      - title: Drucker bearbeiten
+        img: administrator/drucker-bearbeiten
+
+  webdienste:
+    icon: icon-cloud
+    name: Webdienste
+    text: >-
+      Lokal installierte Lernsoftware gehört der Vergangenheit an.
+      Zu den aktuellen Schulbüchern wird Lernsoftware nahezu ausschließlich
+      als Webdienst angeboten. Webdienste bieten den Vorteil, dass sie auf
+      verschiedenen Geräten und unabhängig vom Betriebssytem benutzt werden 
+      können. Außerdem können Webdienste 
+      automatisch vom Hersteller verbessert und aktualisiert werden.
+    text_more: >-
+      Lernfortschritte können für jeden Schüler individuell gespeichert werden, 
+      sodass eine Förderung gezielt erfolgen kann. Außerdem können die 
+      Schüler so zu Hause dort fortfahren, wo sie in der Schule aufgehört 
+      haben.
+      

@@ -1,0 +1,14 @@
+<div class="feature-icon-list row">
+  {% for id in page.features %}
+  {% assign feature = site.feature_list[id] %}
+
+  <div class="col-xs-6 col-sm-3">
+    <a href="#{{id}}">
+      <i class="{{feature.icon}}"></i>
+      <div>{{feature.name}}</div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+

@@ -1,0 +1,13 @@
+{% if page.subcategory == include.item.id %}
+  {% assign activeclass = 'active' %}
+{% else %}
+  {% assign activeclass = '' %}
+{% endif %}
+
+<li class="{{activeclass}}">
+  <a href="/sykus3/{{include.top_item.id}}/{{include.item.id}}">
+    <i class="{{include.item.icon}}"></i> 
+    {{include.item.name}}
+  </a>
+</li>   
+

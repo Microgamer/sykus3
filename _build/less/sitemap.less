@@ -1,0 +1,21 @@
+.sitemap {
+  background-color: @sitemapBackground;
+  padding-bottom: @line-height-computed;
+
+h4 { white-space: nowrap; } 
+
+  > div {
+    padding: 15px;
+    @media (min-width: @screen-sm) {
+      padding: 30px;
+      padding-bottom: 15px;
+    }
+  }
+
+  > div > a { 
+    display: block; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+

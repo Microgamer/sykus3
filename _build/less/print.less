@@ -1,0 +1,21 @@
+@media print {
+//  body { width: 500px; }
+
+  // do not print URLs
+  a[href]:after {
+    content: ""; 
+  }
+
+  .btn {
+    background-color: #fff !important;
+  }
+
+  .carousel-text {
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .sitemap { display: none; }
+}
+
+@page { margin: 1cm; }
+

@@ -1,0 +1,82 @@
+.carousel {
+  margin-top: -20px;
+
+  .carousel-inner, img {
+    min-height: 240px;
+  }
+
+  .carousel-text {
+    position: absolute;
+    max-width: 450px;
+    top: 70px;
+    right: 0;
+    z-index: 10;
+
+    // maximized text for tiny screens
+    @media (max-width: @screen-xs-max) {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      max-width: none;
+    }
+
+    background: rgba(0, 0, 0, 0.75);
+
+    @media (min-width: @screen-sm) {
+      .border-left-radius(@border-radius-base);
+    }
+
+    padding: 20px;
+    text-align: left;
+
+    &, * {
+      color: #fff;
+    }
+  }
+
+
+  // fade instead of slide
+  .carousel-inner > .item{
+    .transition(opacity 0.6s);
+  }
+
+  .active.left, .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .next {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  // nice and thick indicators in top right corner
+  .carousel-indicators {
+    width: 100px;
+
+    top: 10px;
+    right: 0;
+
+    @media (min-width: @screen-sm) {
+      top: 20px;
+      right: 20px;
+    }
+
+    left: auto;
+    bottom: auto;
+
+    li {
+      width: 15px;
+      height: 15px;
+      border-width: 2px;
+
+      &.active {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}
+

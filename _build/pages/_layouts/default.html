@@ -1,0 +1,65 @@
+---
+layout: wrapper
+---
+
+<div id="headWrapper">
+  <div id="head" class="container">
+    <h2>
+      <img class="pull-right" src="/sykus3/res/img/logo.png{{site.version}}" alt="">
+      <a href="/sykus3/">
+        Sykus 3
+      </a>
+    </h2>
+  </div>
+</div>
+
+<div id="navWrapper">
+  <div class="container">
+    <div class="row">
+      <div id="topNav" class="col-12">
+        <ul>
+          {% for item in site.category_list %}
+          {% include top_nav_item.html item=item %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {% if page.category %}
+  <div class="container" id="subNavContainer">
+    <div class="row">
+      <div id="subNav">
+        <ul>
+          {% for item in site.category_list %}
+          {% if item.id == page.category %}
+
+          {% for sub_item in item.items %}
+          {% include sub_nav_item.html top_item=item item=sub_item %}
+          {% endfor %}
+
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<div id="mainWrapper">
+  <div class="container">
+    <div class="row" id="mainOuter">
+      <div id="main">
+        {{ content }}
+
+        {% if page.category %}
+        <div class="spacer"></div>
+        {% endif %}
+
+        {% include sitemap.html %}
+      </div>
+    </div>
+  </div>
+</div>
+

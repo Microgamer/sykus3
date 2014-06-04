@@ -1,0 +1,41 @@
+// prevent image 404
+body:after { content: ""; }
+
+#lightbox {
+  .lb-cancel, .lb-prev, .lb-next, .lb-close {
+    // prevent image 404
+    background: transparent !important;
+
+    .icon-FontAwesome;
+    .icon-3x;
+
+    color: @text-color;
+    text-decoration: none !important;
+
+    .transition(opacity 0.1s linear);
+  }
+
+  .lb-prev, .lb-next {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35%;
+
+    opacity: 0;
+    &:hover { opacity: 1; }
+  }
+
+  .lb-prev { text-align: left; }
+  .lb-next { text-align: right; }
+
+  .lb-close {
+    &, &:hover { color: #fff; }
+    margin-top: 20px;
+  }
+
+  .lb-prev:before { content: @chevron-left; }
+  .lb-next:before { content: @chevron-right; }
+  .lb-close:before { content: @remove; }
+
+  .lb-number { display: none !important; }
+}
+

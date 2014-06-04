@@ -1,0 +1,9 @@
+_build/dist/
+_build/dist_debug/
+_build/lib/
+_build/screenshots/output/
+
+.DS_Store
+*.tmp
+tmp.*
+

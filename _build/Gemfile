@@ -1,0 +1,16 @@
+source 'https://rubygems.org'
+
+# does not work with recent version
+# use the psych version that is present in rubygems.rb
+gem 'psych', '~> 1.2', '>= 1.2.1'
+
+gem 'jekyll'
+
+gem 'thin'
+gem 'sinatra'
+
+gem 'rspec'
+gem 'capybara'
+gem 'selenium-webdriver'
+
+

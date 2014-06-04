@@ -1,0 +1,38 @@
+category_list:
+  - id: kurzuebersicht
+    name: Kurzübersicht
+    icon: icon-pushpin
+    items: 
+      - id: schultraeger
+        name: Schulträger
+        icon: icon-rocket
+      - id: administratoren
+        name: Administratoren
+        icon: icon-cogs
+      - id: lehrer-schueler
+        name: Lehrer &amp; Schüler
+        icon: icon-briefcase
+
+  - id: technologie
+    name: Technologie
+    icon: icon-beaker
+    link: features
+    items:
+      - id: features
+        name: Features
+        icon: icon-check
+      - id: linux
+        name: Linux
+        icon: icon-linux
+      - id: webdienste
+        name: Webdienste
+        icon: icon-globe
+      - id: zuhause
+        name: Zu Hause
+        icon: icon-home
+
+  - id: code 
+    name: Sykus 3 @ GitHub
+    icon: icon-github
+    absolute_link: https://github.com/dziemba/sykus3  
+
