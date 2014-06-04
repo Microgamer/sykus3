@@ -2,7 +2,7 @@
 
 Sykus 3 is a complete network solution for schools. It provides filtered internet access, user management, file sharing and automatic software distribution. 
 
-For more information and screenshots, see the website: http://sykus.github.io (german!)
+For more information and screenshots, see the website: https://dziemba.github.io/sykus3/ (german!)
 
 ## Status
 This project is currently not maintained actively. I used to provide paid setup and support services, but this is no longer the case. Since I worked hard on this project for many months, I want to share it with the public. 
