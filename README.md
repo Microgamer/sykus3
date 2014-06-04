@@ -21,8 +21,11 @@ The development environment requires an Ubuntu Linux host. To get a complete VM 
   * Sinatra
   * DataMapper
   * RSpec
+  * Resque
 * MySQL
 * Redis
+* Libvirt / KVM
+* Chef
 * Twitter Bootstrap
 * Font Awesome
 * Dojo Framework
